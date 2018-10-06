@@ -6,6 +6,12 @@ A Small ERP software to manage clients.
 
 https://quikbiz-691ea.firebaseapp.com
 
+## How it works
+
+Any email and password will work on the login screen.
+
+After logging in, it's possible to search, add, delete, and edit clients.
+
 ## Development
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
