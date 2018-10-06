@@ -1,5 +1,13 @@
 # Quikbiz
 
+A Small ERP software to manage clients.
+
+## Online Link
+
+https://quikbiz-691ea.firebaseapp.com
+
+## Development
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
 ## Development server
