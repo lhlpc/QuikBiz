@@ -1,0 +1,26 @@
+<div class="client-form">
+  <h1 mat-dialog-title *ngIf="this.client.id">Editar Cliente</h1>
+  <h1 mat-dialog-title *ngIf="!this.client.id">Adicionar Novo Cliente</h1>
+  <form [formGroup]="clientForm" (ngSubmit)="onConfirmClick()">
+    <div mat-dialog-content>
+      <mat-form-field>
+        <input matInput placeholder="Nome Completo" formControlName="name">
+        <mat-error *ngIf="clientForm.controls.name.hasError('minlength')">Nome muito curto</mat-error>
+        <mat-error *ngIf="clientForm.controls.name.hasError('required')">Nome é obrigatório</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="E-mail" formControlName="email">
+        <mat-error *ngIf="clientForm.controls.email.hasError('email')">E-mail inválido</mat-error>
+        <mat-error *ngIf="clientForm.controls.email.hasError('required')">E-mail é obrigatório</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Telefone" formControlName="telephone">
+        <mat-error *ngIf="clientForm.controls.telephone.hasError('required')">Telefone é obrigatório</mat-error>
+      </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+      <button type="button" mat-button (click)="onCancelClick()">Cancelar</button>
+      <button type="submit" mat-raised-button color="primary">Confirmar</button>
+    </div>
+  </form>
+</div>

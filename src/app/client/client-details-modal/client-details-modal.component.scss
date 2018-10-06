@@ -1,0 +1,38 @@
+.client-details {
+    .mat-dialog-title {
+        display: flex;
+        margin: 0;
+    }
+
+    h1.mat-dialog-title{ 
+        justify-content: center; 
+        text-align: center;
+        font-size: 24px;
+    }
+
+    h2.mat-dialog-title{ 
+        justify-content: left; 
+        text-align: left;
+        font-size: 12px;
+        color: darkblue; 
+    }
+
+    h3.mat-dialog-title{ 
+        justify-content: left; 
+        text-align: left;
+        font-size: 16px; 
+    }
+
+    .mat-dialog-content {
+        margin: {
+            top: 32px;
+            left: 2px;
+            right: 2px;
+        }
+    }
+
+    .mat-dialog-actions {
+        display: flex;
+        justify-content: center;
+    }
+}

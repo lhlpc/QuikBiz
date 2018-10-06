@@ -1,0 +1,29 @@
+.client-form {
+    .mat-dialog-title { 
+        justify-content: center; 
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .mat-dialog-content {
+        margin: {
+            top: 50px;
+            left: 2px;
+            right: 2px;
+        }
+    }
+    
+    .mat-form-field {
+        display: inline;
+    }
+
+    .mat-form-field {
+        display: block;
+        margin-bottom: 14px !important
+    }
+
+    .mat-dialog-actions {
+        margin-left: 14.5em;
+        margin-bottom: -22px;
+    }
+}

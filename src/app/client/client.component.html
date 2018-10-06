@@ -1,0 +1,16 @@
+<mat-toolbar mat-elevation-z6 color="primary" role="heading">
+    <span>QuikBiz</span>
+    <span class="clients-toolbar"></span>
+    <button mat-button (click)="logout()">Sair <mat-icon>arrow_forward</mat-icon></button>
+</mat-toolbar>
+
+<app-client-search (changedSearch)="refreshClientList($event)"></app-client-search>
+<app-client-list [searchedTerm]="changedTermSubject"></app-client-list>
+
+<button class="add-client-button" 
+        mat-mini-fab color="primary" 
+        (click)="newClient()" 
+        matTooltip="Adicionar novo cliente"
+        aria-label="Button that displays a tooltip when focused or hovered over">
+    <mat-icon>add</mat-icon>
+</button>

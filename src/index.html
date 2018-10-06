@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Quikbiz</title>
@@ -7,8 +8,27 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAHqmj9-XlnP_i06CDHwI1nEAb1JFIG54M",
+    authDomain: "quikbiz-691ea.firebaseapp.com",
+    databaseURL: "https://quikbiz-691ea.firebaseio.com",
+    projectId: "quikbiz-691ea",
+    storageBucket: "quikbiz-691ea.appspot.com",
+    messagingSenderId: "922314524483"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
 </html>

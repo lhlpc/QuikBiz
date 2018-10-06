@@ -1,0 +1,22 @@
+<mat-card class="login-box">
+    <mat-card-header>
+        <mat-card-title class="login-title">QuikBiz</mat-card-title>
+        <mat-card-subtitle class="login-subtitle">Seu negócio mais eficiente</mat-card-subtitle>
+    </mat-card-header>
+    <form (ngSubmit)="login(loginForm)" #loginForm="ngForm">
+        <mat-card-content>
+            <div class="login-form">
+                <mat-form-field class="form-field">
+                    <input type="email" matInput name="email" ngModel required placeholder="E-mail">
+                </mat-form-field>
+
+                <mat-form-field class="form-field">
+                    <input type="password" matInput name="password" ngModel required minlength="6" placeholder="Senha">
+                </mat-form-field>
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+            <button type="submit" mat-raised-button color="primary">Entrar</button>
+        </mat-card-actions>
+    </form>
+</mat-card>
